@@ -1,4 +1,4 @@
-export LOG_DIR=~/ocs-upi-kvm/src/ocs-ci/rerun-logs/
+export LOG_DIR=~/ocs-upi-kvm/scripts/rerun-logs/
 export INDIVIDUAL_TEST_SUMMARY=~/ocs-upi-kvm/scripts/test_summary.log
 export PASS=0
 export FAIL=0
