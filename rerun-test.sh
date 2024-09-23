@@ -25,6 +25,8 @@ else
 
     if [ "$str" = "HEALTH_OK" ];then
         LOG_FILE_NAME=$(awk -F '::' '{print $NF}'<<<"$TEST_CASE")
+	size=${#LOG_FILE_NAME}
+        if [[ $size -gt 10 ]]; then
         nohup run-ci -m "tier$TIER_NO" --ocs-version $OCS_VERSION --ocsci-conf=conf/ocsci/production_powervs_upi.yaml --ocsci-conf conf/ocsci/lso_enable_rotational_disks.yaml --ocsci-conf /root/ocs-ci-conf.yaml --cluster-name "ocstest" --cluster-path /root/ --collect-logs $TEST_CASE | tee $FILE_PATH$LOG_DIR/$LOG_FILE_NAME.log 2>&1
         
         #delete the executed tests
@@ -33,6 +35,10 @@ else
 
 	    echo "sleep 10 seconds before next test execution"
 	    sleep 10 
+     else 
+     	echo "Please check test case"
+      	exit 0
+	fi
     else
         echo "exit dua to ceph health issue"
 	    echo $TEST_CASE
