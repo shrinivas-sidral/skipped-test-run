@@ -1,4 +1,4 @@
-# skipped-test-run
+# Individual-test-run
 - Clone the repo in following directory `~/ocs-upi-kvm/scripts/`
   
    ```
