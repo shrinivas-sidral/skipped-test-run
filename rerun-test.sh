@@ -2,7 +2,7 @@
 export FILENAME=$1
 export OCS_VERSION=4.15
 export TIER_NO=1
-export FILE_PATH=~/ocs-upi-kvm/scripts/
+export FILE_PATH=~/ocs-upi-kvm/scripts/skipped-test-run/
 export LOG_DIR=rerun-logs
 
 if [ -z "$FILENAME" ]; then
