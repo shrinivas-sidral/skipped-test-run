@@ -6,3 +6,6 @@ Extract the skipped test cases and store in file
 
 to remove the empty lines 
 - `sed -i '/^$/d' test_skipped.txt`
+
+to run the script
+- `script.sh <test_case_file_name>`
