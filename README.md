@@ -70,8 +70,10 @@ For Skipped tests.
    ```
    ~/ocs-upi-kvm/scripts/skipped-test-run/rerun-logs
    ```
+## TEST SUMMARY
 
 - After compliting the all the test case execute `test_summary.sh` script for test summary, it will generate the `test_summary.log` file.
+  
    ```
    bash test_summary.sh
    ```
