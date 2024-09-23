@@ -13,3 +13,6 @@ To run the script
 
 All the individual test log files are present in following directory
 - `~/ocs-upi-kvm/scripts/skipped-test-run/rerun-logs`
+
+After compliting the all the test case execute `test_summary.sh` script for test summary, it will generate the `test_summary.log` file.
+- `bash test_summary.sh`
