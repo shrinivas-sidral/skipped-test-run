@@ -8,4 +8,4 @@ to remove the empty lines
 - `sed -i '/^$/d' test_skipped.txt`
 
 to run the script
-- `script.sh <test_case_file_name>`
+- `bash rerun-test.sh <test_case_file_name>`
